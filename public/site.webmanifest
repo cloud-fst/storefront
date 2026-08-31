@@ -1,6 +1,6 @@
 {
-	"name": "Paper",
-	"short_name": "Paper",
+	"name": "InsaiVue",
+	"short_name": "InsaiVue",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#FAF9F7",
-	"background_color": "#FAF9F7",
+	"theme_color": "#0A0F1D",
+	"background_color": "#0A0F1D",
 	"display": "standalone"
 }

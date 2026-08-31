@@ -17,11 +17,17 @@ interface LogoProps {
 	inverted?: boolean;
 }
 
-export const Logo = ({ className, ariaLabel = "Paper by Saleor", inverted = false }: LogoProps) => {
-	const src = inverted ? "/logo-dark.svg" : "/logo.svg";
+export const Logo = ({ className, ariaLabel = "InsaiVue", inverted = false }: LogoProps) => {
+	const src = inverted ? "/logo-dark.png" : "/logo.png";
 
 	return (
 		// eslint-disable-next-line @next/next/no-img-element
-		<img src={src} alt={ariaLabel} width={100} height={23} className={`aspect-[100/23] ${className ?? ""}`} />
+		<img
+			src={src}
+			alt={ariaLabel}
+			width={160}
+			height={40}
+			className={`aspect-[3176/783] h-9 w-auto object-contain ${className ?? ""}`}
+		/>
 	);
 };

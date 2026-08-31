@@ -29,10 +29,11 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const definition = resolveLocaleFromSlug(isStorefrontLocaleSlug(locale) ? locale : getDefaultLocaleSlug());
 
-	if (!rootMetadata.openGraph) return rootMetadata;
 	return {
 		...rootMetadata,
-		openGraph: { ...rootMetadata.openGraph, locale: definition.ogLocale },
+		...(rootMetadata.openGraph && {
+			openGraph: { ...rootMetadata.openGraph, locale: definition.ogLocale },
+		}),
 	};
 }
 
